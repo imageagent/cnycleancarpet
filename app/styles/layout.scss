@@ -1,0 +1,257 @@
+/*=======================================
+  Header & Navigation
+=======================================*/
+
+.contact-bar {
+  background: $brand-dark;
+  color: #fff;
+  font-size: 1.15em;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 1em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.nav > li > a {
+  padding: 0.75em 1em;
+}
+
+.nav-pills > li {
+  float: none;
+  display: inline-block;
+}
+
+.nav-pills > li > a {
+  border-radius: 0;
+}
+
+.flx-nav-wrap {
+  cursor: default;
+  text-align: center;
+}
+
+.flx-logo-wrap {
+  text-align: center;
+}
+
+.flx-logo {
+  margin-bottom: 1em;
+  max-width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  .flx-nav-wrap {
+    float: right;
+    text-align: left;
+  }
+
+  .flx-logo-wrap {
+    text-align: left;
+  }
+
+  .flx-logo {
+    height: 40px;
+    margin-bottom: 0;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+
+/*=======================================
+  Intro Hero
+=======================================*/
+
+.intro {
+  background: url('../images/stardust.png') center center fixed;
+  background-size: cover;
+  padding: 3em 0;
+  text-align: center;
+
+  h1 {
+    // background-color: $brand-primary;
+    color: #fff;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    padding: 0.15em 0.25em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    // background-color: $brand-accent;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0.25em;
+    text-transform: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    padding: 12em 0;
+
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      padding: 0.1em 0.25em;
+    }
+  }
+}
+
+
+/*=======================================
+  About
+=======================================*/
+
+section.about {
+  background: $brand-primary;
+  border-bottom: 2px solid $brand-accent;
+  color: #fff;
+
+  ul {
+    margin: 2em 0 0;
+
+    .fa {
+      color: $brand-accent;
+    }
+
+    h3 {
+      background: url('../images/icons/icon-check.svg') no-repeat left center;
+      background-size: 24px 24px;
+      font-weight: 900;
+      padding-left: 1.35em;
+    }
+  }
+}
+
+.about-content {
+  margin-bottom: 4em;
+}
+
+@media only screen and (min-width: 768px) {
+  section.about {
+    ul {
+      margin: 2em 0;
+    }
+  }
+
+  .about-content {
+    margin-bottom: 0;
+  }
+}
+
+
+/*=======================================
+  Contact Us
+=======================================*/
+
+.contact {
+  background: $brand-primary;
+  border-top: 2px solid $brand-accent;
+  color: #fff;
+}
+
+.panel-body {
+  color: $brand-dark;
+  line-height: 1.5;
+}
+
+.contact-content {
+  margin-top: 3em;
+}
+
+.contact-content ul li {
+  font-size: 1.25em;
+  line-height: 1.5;
+  padding-left: 1.5em;
+
+  &[class*="icon-"] {
+    fill: $brand-accent;
+  }
+
+  &.icon-phone {
+    background: url('../images/icons/icon-phone.svg') no-repeat left center;
+    background-size: auto 18px;
+  }
+  &.icon-email {
+    background: url('../images/icons/icon-email.svg') no-repeat left center;
+    background-size: auto 14px;
+  }
+  &.icon-map {
+    background: url('../images/icons/icon-map.svg') no-repeat 0.25em center;
+    background-size: auto 18px;
+  }
+  &.icon-twitter {
+    background: url('../images/icons/icon-twitter.svg') no-repeat left center; 
+    background-size: auto 18px;
+  }
+  &.icon-facebook {
+    background: url('../images/icons/icon-facebook.svg') no-repeat left center;
+    background-size: auto 18px;
+  }
+
+  a {
+    color: #fff;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $brand-accent;
+      text-decoration: none;
+    }
+  }
+}
+
+// FAQs
+
+.panel a:hover,
+.panel a:active,
+.panel a:visited,
+.panel a:focus {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+.panel a:hover {
+  color: darken($brand-primary, 10%);
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-content {
+    margin-top: 0;
+  }
+}
+
+
+/*=======================================
+  Footer
+=======================================*/
+
+.footer {
+  background: $brand-dark;
+  color: #999;
+  font-size: 0.8em;
+  line-height: 1.5;
+  padding: 1em 0;
+  text-align: center;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
